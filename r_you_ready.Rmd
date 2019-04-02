@@ -1,0 +1,120 @@
+---
+title: "R you ready?"
+author: "Matthias Bannert"
+date: "4/2/2019"
+output: ioslides_presentation
+widescreen: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Before you start... 
+
+**... check the stack:**
+
+- R 3.3.1+
+- R Studio 1.0+
+- R packages: tidyverse, data.table, knitr
+- git (optional)
+
+## Guess what...
+
+**... the following code does:**
+
+```{r,echo=T}
+a <- 1+1
+b <- 2+2
+d <- a + b
+e <- c(1,2,4)
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+a <- 1+1
+b <- 2+2
+d <- a + b
+e <- c(1,2,4)
+```
+
+```{r}
+a
+b
+d
+e
+```
+
+## Guess what...
+
+**... the following code does:**
+
+```{r,echo=T}
+m <- matrix(1:12,4,3)
+d <- data.frame(col1 = 1:8,
+                col2 = letters[1:8])
+l <- list()
+l$element_a <- a
+l$element_m <- m
+l$element_d <- d
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+m <- matrix(1:12,4,3)
+```
+
+```{r}
+m
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+d <- data.frame(col1 = 1:8,
+                col2 = letters[1:8])
+```
+
+```{r}
+d
+```
+
+## You got this right, don't you?
+
+```{r,echo=T,eval=F}
+l <- list()
+l$element_a <- a
+l$element_m <- m
+l$element_d <- d
+```
+
+```{r}
+l
+```
+
+## You know all of those, don't you?
+
+```{r,eval=F,echo=T}
+?sum()
+ls()
+c()
+matrix()
+data.frame()
+list()
+head()
+tail()
+str()
+function()
+lapply()
+```
+
+## Are you familiar with your R Studio IDE?
+
+- R Studio is NOT R.
+- script window
+- console
+- file browser
+- R Studio IDE Cheat Sheets
+- .Rproj
